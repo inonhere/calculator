@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.top {
+    display: flex;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+button {
+    width: 100px;
+    font-family: 'Orbitron';
+}
+
+.display {
+    text-align: right;
+    width: 300px;
+    border: 2px solid gray;
+}
+
+#borrar {
+    background-color: crimson;
+}
+
+#igualdad {
+    background-color: gray;
+}
