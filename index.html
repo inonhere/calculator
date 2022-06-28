@@ -14,14 +14,14 @@
 <body>
     <div class="container">
         <div class="top">
-            <div class="display">alo</div>
+            <div class="display"></div>
         </div>
     </div>
     <div class="container">
     <div class="bottom">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
+        <button onclick="numUno()">1</button>
+        <button onclick="numDos()">2</button>
+        <button onclick="numTres()">3</button>
         <button>4</button>
         <button>5</button>
         <button>6</button>
@@ -29,8 +29,14 @@
         <button>8</button>
         <button>9</button>
         <button>0</button>
-        <button id="borrar">C</button>
-        <button id="igualdad">=</button>
+        <button onclick="borrar()" id="borrar">C</button>
+        <button onclick="igualdad()" id="igualdad">=</button>
+    </div>
+    <div class="bottomRight">
+        <button onclick="sumar()">+</button>
+        <button>-</button>
+        <button>*</button>
+        <button>/</button>
     </div>
     </div>
 </body>

@@ -14,15 +14,21 @@
     grid-template-rows: repeat(3, 1fr);
 }
 
-button {
-    width: 100px;
-    font-family: 'Orbitron';
+.bottomRight {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 .display {
     text-align: right;
     width: 300px;
     border: 2px solid gray;
+}
+
+button {
+    width: 75px;
+    background-color: gainsboro;
 }
 
 #borrar {
