@@ -69,7 +69,10 @@ function sumar() {
    else if (number.y === null){
     number.y = alo;
    }
-   mostrar.textContent = alo;
+   if (number.y === ''){
+    mostrar.textContent = 0;
+   } else {
+   mostrar.textContent = alo;}
    console.log(number)
    operador = 'mas'
 }
@@ -77,13 +80,16 @@ function sumar() {
 function resta() {
     alo = numbers.join("");
     numbers = []
-    mostrar.textContent = alo;
     if (number.x === null){
      number.x = alo;
     }
     else if (number.y === null){
      number.y = alo;
     }
+    if (number.y === ''){
+        mostrar.textContent = 0;
+       } else {
+       mostrar.textContent = alo;}
     console.log(number)
     operador = 'resta'
  }
@@ -98,6 +104,10 @@ function resta() {
     else if (number.y === null){
      number.y = alo;
     }
+    if (number.y === ''){
+        mostrar.textContent = 0;
+       } else {
+       mostrar.textContent = alo;}
     console.log(number)
     operador = 'mul'
  }
@@ -112,6 +122,10 @@ function resta() {
     else if (number.y === null){
      number.y = alo;
     }
+    if (number.y === ''){
+        mostrar.textContent = 0;
+       } else {
+       mostrar.textContent = alo;}
     console.log(number)
     operador = 'division'
  }
@@ -129,20 +143,20 @@ function igualdad() {
     else if (operador === 'resta'){
         resultado = Number(number.x) - Number(number.y);
         mostrar.textContent = resultado;
-        number.x = null;
+        number.x = resultado;
         number.y = null; 
     }
     else if (operador === 'mul'){
         resultado = Number(number.x) * Number(number.y);
         mostrar.textContent = resultado;
-        number.x = null;
+        number.x = resultado;
         number.y = null;
     }
 
     else if (operador === 'division'){
         resultado = Number(number.x) / Number(number.y);
         mostrar.textContent = resultado;
-        number.x = null;
+        number.x = resultado;
         number.y = null;
     }
 

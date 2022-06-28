@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    font-size: 50px;
 }
 
 .top {
@@ -22,14 +23,15 @@
 
 .display {
     text-align: right;
-    width: 300px;
+    width: 350px;
     border: 2px solid gray;
     font-family: 'Orbitron';
 }
 
 button {
-    width: 75px;
+    width: 87.5px;
     background-color: gainsboro;
+    font-size: 50px;
 }
 
 #borrar {
@@ -38,4 +40,12 @@ button {
 
 #igualdad {
     background-color: gray;
+}
+
+#positivo {
+    background-color: cornflowerblue;
+}
+
+#negativo {
+    background-color: greenyellow;
 }
